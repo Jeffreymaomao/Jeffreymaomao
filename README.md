@@ -23,6 +23,11 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jeffreymaomao&border_radius=10&layout=compact&hide=Jupyter%20Notebook" />
 </picture>
 
+### Ray-Tracing Simulation of Kerr Black Hole
+<img src="https://raw.githubusercontent.com/Jeffreymaomao/figure/main/Kerr-BH.png" width="45%"> <img src="https://raw.githubusercontent.com/Jeffreymaomao/figure/main/Kerr-BH.gif" width="45%">
+
+
+
 <!--
 **Jeffreymaomao/Jeffreymaomao** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
