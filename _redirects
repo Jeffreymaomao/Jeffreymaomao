@@ -1,4 +1,4 @@
-/TexField/*    https://jeffreymaomao.github.io/TexField/dist/
-/Timeline/*    https://jeffreymaomao.github.io/Timeline/
-/Freemath/*    https://jeffreymaomao.github.io/Freemath/dist/
-/imgnote/*     https://jeffreymaomao.github.io/imgnote/dist/
+/TexField/*    https://jeffreymaomao.github.io/TexField/dist/:splat  200
+/Timeline/*    https://jeffreymaomao.github.io/Timeline/:splat       200
+/Freemath/*    https://jeffreymaomao.github.io/Freemath/dist/:splat  200
+/imgnote/*     https://jeffreymaomao.github.io/imgnote/dist/:splat   200
