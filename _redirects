@@ -1,9 +1,9 @@
-%/TexField/*  https://texfield.netlify.app/:splat      200
-%/Timeline/*  https://timeline-mao.netlify.app/:splat  200
-%/Freemath/*  https://freemath-mao.netlify.app/:splat  200
-%/imgnote/*   https://imgnote.netlify.app/:splat       200
+/TexField/*  https://texfield-mao.netlify.app/:splat  200
+/Timeline/*  https://timeline-mao.netlify.app/:splat  200
+/Freemath/*  https://freemath-mao.netlify.app/:splat  200
+/ImgNote/*   https://imgnote-mao.netlify.app/:splat   200
 
-%/TexField/*  https://jefferymaomao.github.io/TexField/:splat  200
-%/Timeline/*  https://jefferymaomao.github.io/Timeline/:splat  200
-%/Freemath/*  https://jefferymaomao.github.io/freemath/:splat  200
-%/imgnote/*   https://jefferymaomao.github.io/imgnote/:splat   200
+/texfield/*  https://texfield-mao.netlify.app/:splat  200
+/timeline/*  https://timeline-mao.netlify.app/:splat  200
+/freemath/*  https://freemath-mao.netlify.app/:splat  200
+/imgnote/*   https://imgnote-mao.netlify.app/:splat   200
