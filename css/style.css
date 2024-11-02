@@ -51,7 +51,6 @@ body ul {
 }
 
 /* --- */
-
 body div.container {
     width: 800px;
     padding: 0 5rem;
@@ -60,11 +59,31 @@ body div.container {
 }
 
 body div.content {
-    padding: 0 1rem;
+    padding: 0 0.6rem;
 }
 
 span.seperator {
     padding: 0 0.5em;
+}
+
+body ul.link-with-desc {
+}
+
+body ul.link-with-img {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+}
+
+body ul.link-with-img li {
+    width: auto;
+}
+
+body ul.link-with-img img {
+    width: 180px;
+    border-radius: 10px;
 }
 
 /* --- */
@@ -77,6 +96,12 @@ span.seperator {
 
     body div.content {
         padding: 0;
+    }
+
+    span.seperator {
+        opacity: 0;
+        height: 0;
+        display: block;
     }
 }
 
