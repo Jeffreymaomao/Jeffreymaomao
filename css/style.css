@@ -103,6 +103,9 @@ body ul.link-with-img img {
         height: 0;
         display: block;
     }
+
+    ul.link-with-img img {
+    }
 }
 
 
