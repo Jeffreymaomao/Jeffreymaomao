@@ -1,6 +1,7 @@
 * {
 	box-sizing: border-box;
 	position: relative;
+	--width-padding: 12%;
 	--background-color: #000000;
 	--title-color: #ffffff;
 	--color: #e4e7ed;
@@ -19,9 +20,8 @@ h1,h2,h3,h4 {
 body {
 	font-family: Helvetica, sans-serif;
 	color: var(--color);
-	background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1.0)),
-	url('https://raw.githubusercontent.com/Jeffreymaomao/Black-Hole-Image/refs/heads/main/Interstellar/img0000.png');
-/*	background: #000;*/
+	background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+	url('../assets/Kerr-BH.jpg');
 	background-color: var(--background-color);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -42,7 +42,7 @@ header {
 	position: fixed;
 	width: 100%;
 	margin: 0;
-	padding: 8px 16%;
+	padding: 8px var(--width-padding);
 	z-index: 1000;
 	border-radius: 0;
 	backdrop-filter: blur(5px);
@@ -60,7 +60,8 @@ h1 {
 /* --- */
 
 main {
-	padding: 54px 16%;
+	padding: 54px var(--width-padding);
+	padding-bottom: 0;
 	overflow: scroll;
 	height: 100vh;
 }
@@ -68,7 +69,6 @@ main {
 /* --- */
 
 section {
-	width: 90%;
 	padding-top: 10px;
 }
 
