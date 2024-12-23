@@ -17,18 +17,34 @@ h1,h2,h3,h4 {
 }
 
 /* --- */
+
 body {
 	font-family: Helvetica, sans-serif;
 	color: var(--color);
-	background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-	url('../assets/Kerr-BH.jpg');
-	background-color: var(--background-color);
+	background: url('../assets/Kerr-BH.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
 	height: 100vw;
 	overflow: hidden;
+}
+
+
+/* This is a mask to lower down the light of background image. */
+body::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.5);
+	transition: background-color 0.2s ease-out;
+}
+
+body.scroll-end::before {
+	background-color: transparent;
 }
 
 .container {
@@ -42,7 +58,8 @@ header {
 	position: fixed;
 	width: 100%;
 	margin: 0;
-	padding: 8px var(--width-padding);
+	padding: 10px var(--width-padding);
+	padding-top: 12px;
 	z-index: 1000;
 	border-radius: 0;
 	backdrop-filter: blur(5px);
@@ -57,6 +74,51 @@ h1 {
 	vertical-align: middle;
 }
 
+div.links {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+}
+
+div.links a {
+	transform: scale(1.0);
+	transition: 0.2s;
+	display: inline-block;
+	margin-left: 10px;
+	width: 24px;
+	height: 24px;
+}
+
+div.links a:hover {
+	transform: scale(1.05);
+}
+
+div.links a:active {
+	transform: scale(0.95);
+}
+
+div.links a#github {
+	background: url("./icon/github.svg");
+}
+
+div.links a#instagram {
+	background: url("./icon/instagram.svg");
+}
+
+div.links a#facebook {
+	background: url("./icon/facebook.svg");
+}
+
+div.links a#youtube {
+	background: url("./icon/youtube.svg");
+}
+
+div.links a#mail {
+	background: url("./icon/mail.svg");
+}
+
+
 /* --- */
 
 main {
@@ -64,16 +126,31 @@ main {
 	padding-bottom: 0;
 	overflow: scroll;
 	height: 100vh;
+	margin: 0;
+	scroll-snap-type: y mandatory;
+	scroll-padding: 30px;
 }
 
 /* --- */
 
 section {
+	scroll-snap-align: start;	
+	min-height: 100px;
 	padding-top: 10px;
 }
 
+section#intro {
+	padding-top: 70px;
+	padding-bottom: 50px;
+}
+
+section#full-page {
+	height: 100vh;
+	scroll-snap-align: end;
+}
+
 div.content {
-	padding-left: 20px;
+	padding-left: 1.5%;
 }
 
 p {
@@ -86,6 +163,8 @@ h3 {
 
 ul {
 	display: flex;
+	flex-wrap: wrap;
+
 	gap: 10px;
 	overflow-x: auto;
 	padding: 10px;
@@ -98,6 +177,16 @@ ul {
 li {
 	padding: 0;
 	margin: 0;
+	transform: translateY(0);
+	transition: 0.2s;
+}
+
+li:hover {
+	transform: translateY(-2px);
+}
+
+li:active {
+	transform: translateY(1px);
 }
 
 li a {
@@ -124,12 +213,14 @@ li a {
 	text-wrap: wrap;
 	word-break: break-word;
 	white-space: normal;
+
+	background-color: rgba(255,255,255,0.2);
+
+			user-drag: none;
+	-webkit-user-drag: none;
+	
 }
 
-/**
- * Color Transformation 
- * https://www.zhangxinxu.com/sp/filter.html
-**/
 li a::after {
 	content: '';
 	position: absolute;
@@ -140,6 +231,10 @@ li a::after {
 	width: 24px;
 	height: 24px;
 
+	/**
+	 * Color Transformation 
+	 * https://www.zhangxinxu.com/sp/filter.html
+	**/
 	/* #000000 to #fff */
 /*	filter: invert(99%) sepia(19%) saturate(0%) hue-rotate(317deg) brightness(116%) contrast(100%);*/
 	/* #000000 to #bbb */
@@ -190,5 +285,28 @@ a img {
 	height: 100%;
 }
 
+img.thumbnail {
+	display: none;
+	position: absolute;
+	transform: none;
+	top: 0;
+	left: 0;
+	height: 45%;
+	width: 100%;
+}
 
+/* --- */
+footer {
+	padding: 30px 0;
+	font-size: 13pt;
+	font-weight: 100;
+	background-color: transparent;
+	text-align: center;
+	z-index: -1;
+	margin-top: 0px;
+	transition: margin-top 0.3s ease-out;
+}
 
+body.scroll-end footer{
+	margin-top: -100px;
+}
