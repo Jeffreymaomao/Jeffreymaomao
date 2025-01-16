@@ -286,13 +286,27 @@ a img {
 }
 
 img.thumbnail {
-	display: none;
+/*	display: none;*/
 	position: absolute;
 	transform: none;
 	top: 0;
 	left: 0;
-	height: 45%;
-	width: 100%;
+	height: auto;
+	max-height: 65%;
+/*	width: 100%;*/
+	overflow: hidden;
+/*	border: 1px solid yellow;*/
+	opacity: 0.6;
+}
+
+img.thumbnail.top {
+	object-position: left top;
+	max-height: 55%;
+}
+
+img.thumbnail.bottom {
+	object-position: left bottom;
+	max-height: 55%;
 }
 
 /* --- */
