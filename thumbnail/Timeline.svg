@@ -1,0 +1,17 @@
+<svg width="257" height="74" viewBox="0 0 257 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_19_1416" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="257" height="74">
+<rect width="257" height="74" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_19_1416)">
+<path d="M108 68C107.724 68 107.5 68.2239 107.5 68.5C107.5 68.7761 107.724 69 108 69V68ZM237 68.5L232 65.6132V71.3868L237 68.5ZM108 69H232.5V68H108V69Z" fill="white"/>
+<circle cx="132.5" cy="68.5" r="2.5" fill="white"/>
+<circle cx="175.5" cy="68.5" r="2.5" fill="white"/>
+<path d="M133 55L135.387 50H129.613L132 55H133ZM133 68V54.5H132V68H133Z" fill="white"/>
+<path d="M176 39L178.387 34L172.613 34L175 39L176 39ZM176 68L176 38.5L175 38.5L175 68L176 68Z" fill="white"/>
+<rect x="114.5" y="26.5" width="36" height="24" rx="4.5" stroke="white"/>
+<circle cx="204.5" cy="68.5" r="2.5" fill="white"/>
+<path d="M205 62L207.387 57L201.613 57L204 62L205 62ZM205 68L205 61.5L204 61.5L204 68L205 68Z" fill="white"/>
+<rect x="186.5" y="36.5" width="36" height="20" rx="4.5" stroke="white"/>
+<rect x="154.5" y="9.5" width="45" height="24" rx="4.5" stroke="white"/>
+</g>
+</svg>
