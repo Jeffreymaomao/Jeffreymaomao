@@ -1,7 +1,7 @@
 * {
 	box-sizing: border-box;
 	position: relative;
-	--width-padding: 12%;
+	--width-padding: 11%;
 	--background-color: #000000;
 	--title-color: #ffffff;
 	--color: #e4e7ed;
@@ -124,10 +124,31 @@ div.links a#mail {
 main {
 	padding: 54px var(--width-padding);
 	padding-bottom: 0;
-	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: scroll;
 	height: 100vh;
 	margin: 0;
 	scroll-snap-type: y mandatory;
+	scroll-padding-bottom: 45px;
+}
+
+main::-webkit-scrollbar {
+	width: 5px;
+	background-color: transparent;
+}
+main::-webkit-scrollbar-track {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+main::-webkit-scrollbar-thumb {
+	cursor: grab;
+	border-radius: 3px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+main::-webkit-scrollbar-thumb:active {
+	cursor: grabbing;
+}
+main::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 h2 {
@@ -143,7 +164,7 @@ section {
 	the element that use scroll-snap-align, 
 	or the anchor will mess up the UI.*/
 	scroll-margin-top: 45px;
-	scroll-snap-align: start;	
+	scroll-snap-align: start;
 	min-height: 100px;
 	padding: 0;
 }
