@@ -34,7 +34,7 @@ body {
 /* This is a mask to lower down the light of background image. */
 body::before {
 	content: '';
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
@@ -128,15 +128,24 @@ main {
 	height: 100vh;
 	margin: 0;
 	scroll-snap-type: y mandatory;
-	scroll-padding: 30px;
+}
+
+h2 {
+	margin: 0;
+	padding-top: 30px;
+	padding-bottom: 10px;
 }
 
 /* --- */
 
 section {
+	/* The scroll-margin should adding to 
+	the element that use scroll-snap-align, 
+	or the anchor will mess up the UI.*/
+	scroll-margin-top: 45px;
 	scroll-snap-align: start;	
 	min-height: 100px;
-	padding-top: 10px;
+	padding: 0;
 }
 
 section#intro {
@@ -243,7 +252,7 @@ li a::after {
 	filter: invert(85%) sepia(0%) saturate(16%) hue-rotate(251deg) brightness(103%) contrast(99%);
 }
 
-a[href~="#"]::after {
+li a[href~="#"]::after {
 	content: none;
 }
 
@@ -295,7 +304,6 @@ img.thumbnail {
 	max-height: 65%;
 /*	width: 100%;*/
 	overflow: hidden;
-/*	border: 1px solid yellow;*/
 	opacity: 0.6;
 }
 
