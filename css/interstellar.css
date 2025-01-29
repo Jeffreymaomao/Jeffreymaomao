@@ -122,8 +122,9 @@ div.links a#mail {
 /* --- */
 
 main {
-	padding: 54px var(--width-padding);
-	padding-bottom: 0;
+	padding: 0 var(--width-padding);
+	padding-top: 54px !important;
+	padding-bottom: 0 !important;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	height: 100vh;
