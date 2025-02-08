@@ -60,7 +60,7 @@ header {
 	margin: 0;
 	padding: 10px var(--width-padding);
 	padding-top: 12px;
-	z-index: 1000;
+	z-index: 100;
 	border-radius: 0;
 	backdrop-filter: blur(5px);
 					-webkit-backdrop-filter: blur(5px);
@@ -117,7 +117,6 @@ div.links a#youtube {
 div.links a#mail {
 	background: url("./icon/mail.svg");
 }
-
 
 /* --- */
 
@@ -220,7 +219,7 @@ li:active {
 	transform: translateY(1px);
 }
 
-li a {
+li a.card {
 	display: flex;
 	flex-direction: column-reverse;
 	justify-content: flex-start;
@@ -252,7 +251,7 @@ li a {
 	
 }
 
-li a::after {
+li a.card::after {
 	content: '';
 	position: absolute;
 	top: 10px;
@@ -274,7 +273,7 @@ li a::after {
 	filter: invert(85%) sepia(0%) saturate(16%) hue-rotate(251deg) brightness(103%) contrast(99%);
 }
 
-li a[href~="#"]::after {
+li a.card[href^="#"]::after {
 	content: none;
 }
 
@@ -295,7 +294,7 @@ span.seperator {
 	display: none;
 }
 
-span.desc {
+p.desc {
 	display: block;
 	bottom: 0;
 	position: absolute;
@@ -304,7 +303,7 @@ span.desc {
 	padding: 10px 16px;
 }
 
-a img {
+a.card img {
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -316,7 +315,7 @@ a img {
 	height: 100%;
 }
 
-img.thumbnail {
+a.card img.thumbnail {
 /*	display: none;*/
 	position: absolute;
 	transform: none;
@@ -329,17 +328,18 @@ img.thumbnail {
 	opacity: 0.6;
 }
 
-img.thumbnail.top {
+a.card img.thumbnail.top {
 	object-position: left top;
 	max-height: 55%;
 }
 
-img.thumbnail.bottom {
+a.card img.thumbnail.bottom {
 	object-position: left bottom;
 	max-height: 55%;
 }
 
 /* --- */
+
 footer {
 	padding: 30px 0;
 	font-size: 13pt;
@@ -354,3 +354,46 @@ footer {
 body.scroll-end footer{
 	margin-top: -100px;
 }
+
+/* --- */
+
+main, section, div.content, ul, li, a.card, h4 {
+/* notransform */
+}
+
+.iframe-container {
+	display: none;
+	background-color: #ccc;
+	z-index: 200;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+
+.iframe-container.show {
+	display: block;
+	position: fixed !important;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+	height: 87%;
+}
+
+.iframe-container iframe {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
