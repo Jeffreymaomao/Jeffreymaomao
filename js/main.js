@@ -41,8 +41,13 @@ function clickToShowPoster() {
 	posters.forEach(poster => {
 		const clickEvent = ()=>{
 			const iframe = iframeContainer.querySelector('iframe');
-			if(!iframe) return;
-			iframe.src = poster.getAttribute('data-url');
+			const posterSrc = poster.getAttribute('data-url');
+			if(!iframe || !posterSrc) return;
+			// reset src
+			if(iframe.getAttribute('src')!==posterSrc){
+				iframe.src = "";
+				iframe.src = posterSrc;
+			}
 			setTimeout(()=>{
 				iframeContainer.style.display = "block";
 				iframeContainer.classList.add("show");

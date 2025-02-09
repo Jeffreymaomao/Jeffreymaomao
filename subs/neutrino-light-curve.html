@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10">
+	<title>Neutrino-Light-Curve</title>
+	<script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.min.mjs"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf_viewer.min.css" integrity="sha512-3RmdRrL3AYc82NkZyJY3Id9029bY37R6LtgNQkNRdZm+eI0sVjV/J5IF9QsC8VDUheqJ9pxCBQc8ts6wiOXIOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="../css/normalize.css"/>
+	<link rel="stylesheet" href="../css/subs.css"/>
+</head>
+<body>
+	<h1>Neutrino Light Curves of Core-Collapse Supernovae</h1>
+	<script>
+		window.addEventListener('load', function() {
+			if (typeof pdfjsLib === 'undefined') {
+				console.log('Please include the PDF.js library first');
+			}
+			pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.mjs";
+			var loadingTask = pdfjsLib.getDocument('../assets/poster/neutrino-light-curve.pdf');
+			console.log(loadingTask)
+			loadingTask.promise.then(function(pdf) {
+				console.log(pdf)
+				pdf.getPage(1).then(function(page) {
+					console.log(page)
+					var scale = 2.0;
+					var viewport = page.getViewport({ scale: scale });
+					var container = document.getElementById('pdf-viewer');
+					var canvas = document.createElement('canvas');
+					var context = canvas.getContext('2d');
+					canvas.height = viewport.height;
+					canvas.width = viewport.width;
+					container.appendChild(canvas);
+					page.render({ canvasContext: context, viewport: viewport });
+				});
+			});
+		});
+	</script>
+	<main>
+		<div id="pdf-viewer"></div>
+	</main>
+</body>
+</html>
