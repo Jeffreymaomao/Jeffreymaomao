@@ -31,6 +31,7 @@ span[role="presentation"] {
 	background-color: rgba(0,0,0,0.2);
 }
 
+.img-container,
 .pdf-container {
 	margin: auto;
 	width: 90%;
@@ -38,7 +39,13 @@ span[role="presentation"] {
 	border-radius: 10px;
 	overflow: hidden;
 }
+/* --- */
+.img-canvas {
+	display: block;
+	width: 100%;
+}
 
+/* ---- */
 .pdf-canvas {
 	display: block;
 	width: 100%;
