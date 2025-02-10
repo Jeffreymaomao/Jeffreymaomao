@@ -8,36 +8,19 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf_viewer.min.css" integrity="sha512-3RmdRrL3AYc82NkZyJY3Id9029bY37R6LtgNQkNRdZm+eI0sVjV/J5IF9QsC8VDUheqJ9pxCBQc8ts6wiOXIOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="../css/normalize.css"/>
 	<link rel="stylesheet" href="../css/subs.css"/>
+	<link rel="shortcut icon" href="https://raw.githubusercontent.com/Jeffreymaomao/Jeffreymaomao/refs/heads/main/assets/selfy800x800.png" />
+	<script src="../js/subs.js"> </script>
 </head>
 <body>
-	<h1>Neutrino Light Curves of Core-Collapse Supernovae</h1>
-	<script>
-		window.addEventListener('load', function() {
-			if (typeof pdfjsLib === 'undefined') {
-				console.log('Please include the PDF.js library first');
-			}
-			pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.mjs";
-			var loadingTask = pdfjsLib.getDocument('../assets/poster/neutrino-light-curve.pdf');
-			console.log(loadingTask)
-			loadingTask.promise.then(function(pdf) {
-				console.log(pdf)
-				pdf.getPage(1).then(function(page) {
-					console.log(page)
-					var scale = 2.0;
-					var viewport = page.getViewport({ scale: scale });
-					var container = document.getElementById('pdf-viewer');
-					var canvas = document.createElement('canvas');
-					var context = canvas.getContext('2d');
-					canvas.height = viewport.height;
-					canvas.width = viewport.width;
-					container.appendChild(canvas);
-					page.render({ canvasContext: context, viewport: viewport });
-				});
-			});
-		});
-	</script>
 	<main>
-		<div id="pdf-viewer"></div>
+		<h1>Neutrino Light Curves of Core-Collapse Supernovae</h1>
+		<p>
+			This is a poster I presented at the 2021 APS April Meeting.
+			The poster is about the neutrino light curves of core-collapse supernovae. The poster is based on the paper "Neutrino Light Curves of Core-Collapse Supernovae" by K. Nakazato, K. Sumiyoshi, H. Suzuki, T. Totani, H. Umeda, and S. Yamada. The paper is published in the Astrophysical Journal, 789: 127 (2014). The poster is created using LaTeX and TikZ.
+		</p>
+		<div class="pdf-container" data-url="../assets/poster/neutrino-light-curve.pdf">
+			<canvas class="pdf-canvas"></canvas>
+		</div>
 	</main>
 </body>
 </html>

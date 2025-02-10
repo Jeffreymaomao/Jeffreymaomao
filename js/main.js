@@ -1,7 +1,14 @@
 window.addEventListener('load', () => {
+	const iframeContainer = document.querySelector('.iframe-container');
 	// for main page
 	addScrollEffectToSeeBackground();
-	clickToShowPoster();
+	clickToShowPoster(iframeContainer);
+
+	const params = new URLSearchParams(location.search);
+	const poster = document.querySelector(`.card[href^="?poster=${params.get("poster")}"]`);
+	if(poster){
+		updatePosterFromURL(iframeContainer, poster)
+	}
 });
 
 function addScrollEffectToSeeBackground() {
@@ -25,9 +32,8 @@ function addScrollEffectToSeeBackground() {
 function removeCurrentPoster() {
 	const iframeContainer = document.querySelector('.iframe-container');
 	const iframe = iframeContainer.querySelector('iframe');
-	iframeContainer.style.display = "none";
 	iframeContainer.classList.remove("show");
-
+	window.history.pushState({}, "", location.pathname);
 	// wait some time to remove the src
 	// setTimeout(()=>{
 	// 	if (iframeContainer.classList.contains("show")) return;
@@ -35,33 +41,36 @@ function removeCurrentPoster() {
 	// }, 1000);
 }
 
-function clickToShowPoster() {
-	const iframeContainer = document.querySelector('.iframe-container');
-	const posters = document.querySelectorAll('.card[href^="#"]');
-	posters.forEach(poster => {
-		const clickEvent = ()=>{
-			const iframe = iframeContainer.querySelector('iframe');
-			const posterSrc = poster.getAttribute('data-url');
-			if(!iframe || !posterSrc) return;
-			// reset src
-			if(iframe.getAttribute('src')!==posterSrc){
-				iframe.src = "";
-				iframe.src = posterSrc;
-			}
-			setTimeout(()=>{
-				iframeContainer.style.display = "block";
-				iframeContainer.classList.add("show");
-			}, 0);
+function updatePosterFromURL(iframeContainer, posterCardDom) {
+	const iframe = iframeContainer.querySelector('iframe');
+	const posterSrc = posterCardDom.getAttribute('data-url');
+	if(!iframe || !posterSrc) return; // not found
+	// --- reset src
+	if(iframe.getAttribute('src')!==posterSrc){
+		iframe.src = "";
+		iframe.src = posterSrc;
+	}
+	iframeContainer.classList.add("show");
+}
+
+function clickToShowPoster(iframeContainer) {
+	document.addEventListener('click', (e) => {
+		const poster = e.target.closest('.card[href^="?poster="]');
+		if (poster) {
+			e.preventDefault(); // avoid reloading webpage
+			const url = new URL(poster.href, window.location.origin);
+			window.history.pushState({}, "", url.search);
+			updatePosterFromURL(iframeContainer, poster);
+			return; // do not go to `removeCurrentPoster()`
 		}
-		poster.addEventListener('click', clickEvent);
-	});
-	window.addEventListener('click', (e) => {
+
 		if (iframeContainer.classList.contains("show") 
-			&& !iframeContainer.contains(e.target) ) {
+			&& !iframeContainer.contains(e.target)) {
 			removeCurrentPoster();
 		}
 	});
 }
+
 
 
 
