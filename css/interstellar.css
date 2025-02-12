@@ -21,7 +21,7 @@ h1,h2,h3,h4 {
 body {
 	font-family: Helvetica, sans-serif;
 	color: var(--color);
-	background: url('../assets/Kerr-BH.jpg');
+	background: url('../assets/Kerr-BH.horizontal.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -194,7 +194,6 @@ h3 {
 ul {
 	display: flex;
 	flex-wrap: wrap;
-
 	gap: 10px;
 	overflow-x: auto;
 	padding: 10px;
@@ -209,6 +208,8 @@ li {
 	margin: 0;
 	transform: translateY(0);
 	transition: 0.2s;
+	min-width: 260px;
+	max-width: 400px;
 }
 
 li:hover {
@@ -224,8 +225,6 @@ li a.card {
 	flex-direction: column-reverse;
 	justify-content: flex-start;
 	width: 100%;
-	min-width: 260px;
-	max-width: 400px;
 
 	height: 150px;
 	padding: 0;
@@ -301,6 +300,7 @@ p.desc {
 	text-wrap: wrap;
 	font-size: 10pt;
 	padding: 10px 16px;
+	max-width: 100%;
 }
 
 a.card img {
@@ -393,15 +393,52 @@ main, section, div.content, ul, li, a.card, h4 {
 	height: 100%;
 }
 
+/* --- */
 
+@media only screen and (max-width: 900px) {
+	body {
+		background: url('../assets/Kerr-BH.vertical.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
+	}
 
+	* {
+		--width-padding: 5%;
+	}
+	span.last-name {
+		display: none;
+	}
+	section#intro {
+		padding-top: 40px;
+		padding-bottom: 0px;
+	}
 
+	ul {
+		justify-content: space-evenly;
+	}
 
+	ul.link-with-desc li,
+	ul.link-with-img li {
+		width: auto;
+		max-width: 48%;
+		max-width: 30%;
+	}
 
-
-
-
-
-
+	a.card img.thumbnail,
+	a.card img.thumbnail.bottom,
+	a.card img.thumbnail.top {
+		max-height: 60%;
+	}
+	a.card h4 {
+		font-size: 13pt;
+		padding: 4px 16px;
+	}
+	p.desc {
+		font-size: 9pt;
+		padding: 8px 16px;
+	}
+}
 
 
