@@ -7,6 +7,6 @@ $$
 $$
 
 $$
-|\Psi (t)\rangle =\sum _{n}A_{n}e^{{-iE_{n}t}/\hbar }|\psi _{E_{n}}\rangle
+|\Psi (t)\rangle =\sum _{n}A_{n}e^{ - i E_{n} t/\hbar }|\psi _{E_{n}}\rangle
 $$
 
