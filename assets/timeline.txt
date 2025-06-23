@@ -2,7 +2,7 @@ yyyy[/MM[/dd[-hh:mm]]]
 
 -----------------------------------
 
-2002/06/13, Birthday, c=rgb(200,100,100)
+2002/06/13, Birthday, c=rgb(200,15,10, 0.6)
 
 -----------------------------------
 
@@ -24,16 +24,21 @@ yyyy[/MM[/dd[-hh:mm]]]
 
 2007
 
------------------------------------
-#### Da-Ton Elementary School H.C.C 新竹縣竹東鎮大同國民小學
-2008/09/01, 2014/06/01, DTES (大同國小), c=rgb(44,103,72)
+#### 搬家來新竹
+2007/08, Kaohsiung to Hsinchu, c=rgba(100,100,100,0.6)
 
-#### Wu Xiu Taekwondo Gym 武秀跆拳道
-2008/09/01, 2016/06/01, Taekwondo (跆拳道), c=rgb(20,20,20)
+-----------------------------------
+
+2008
 
 -----------------------------------
 
 2009
+#### Da-Ton Elementary School H.C.C 新竹縣竹東鎮大同國民小學
+2009/09/01, 2014/06/01, DTES (大同國小), c=rgb(44,103,72)
+
+#### Wu Xiu Taekwondo Gym 武秀跆拳道
+2009/09/01, 2016/06/01, Taekwondo (跆拳道), c=rgb(20,20,20)
 
 -----------------------------------
 
@@ -53,8 +58,11 @@ yyyy[/MM[/dd[-hh:mm]]]
 
 -----------------------------------
 
+#### 泳渡日月潭
+2014/08/03-08:00, 2014/08/03-12:00, Swimming Cross Sun Moon Lake, c=rgba(46,107,203,0.6)
+
 #### Hsinchu County Tzu-Chiang Junior High School 新竹縣立自強國民中學
-2014/09/01, 2017/06/01, HCTCJHS (自強國中), c=rgb(46,107,203)
+2014/09/01, 2017/06/01, TCJHS (自強國中), c=rgb(46,107,203)
 
 -----------------------------------
 
@@ -99,25 +107,29 @@ yyyy[/MM[/dd[-hh:mm]]]
 2023/07/01, 2023/08/29, (Sinica) Light Curve Project, c=rgb(60,60,60)
 
 #### Constraining the equation of state of neutron star matter with LIGO and NICER data
-2023/06/01, 2024/06/29, (CCU) Neutron Star Project, c=rgb(60,60,60)
+2023/06/01, 2024/06/01, (CCU) Neutron Star Project, c=rgb(60,60,60)
 
 #### Parameter Estimation of Coupled Oscillation System through Markov Chain Monte Carlo Method
-2023/08/01, 2024/05/29, (CCU) MCMC Project, c=rgb(60,60,60)
+2023/02/01, 2024/06/01, (CCU) MCMC Project, c=rgb(60,60,60)
 
 #### Ray Tracing in Schwarzschild Black Hole
-2023/07/01, 2024/08/29, Schwarzschild BH Project, c=rgb(170, 10, 20)
-
-#### Gravitational Lensing Visualization of Schwarzschild Black Hole
-2023/07/01, 2023/08/29, GR Lensing Project, c=rgb(170, 10, 20)
+2023/02/01, 2024/08/29, Schwarzschild Black Hole Project, c=rgb(170, 10, 20)
 
 #### Simulation of the Orbit near Compact star
-2023/07/01, 2023/08/29, GR Precession Project, c=rgb(170, 10, 20)
+2023/02/01, 2023/06/01, GR Precession Project, c=rgb(170, 10, 20)
+
+#### Gravitational Lensing Visualization of Schwarzschild Black Hole
+2023/02/01, 2023/06/01, GR Lensing Project, c=rgb(170, 10, 20)
 
 #### Desmos Projects Collection Website
-2017/09/01, 2021/06/29, Desmos Collection Projects, c=rgb(170, 10, 20)
+2017/09/01, 2021/06/01, Desmos Collection Projects, c=rgb(170, 10, 20)
 
+#### Note Tree Website Project
+2023/05/21, 2024/01/28, NoteTree Project
 
 -----------------------------------
+#### Ray Tracing in Kerr Black Hole
+2021/06/30, 2021/06/01, Kerr Black Hole Project, c=rgb(170, 10, 20)
 
 #### Institute of Physics, National Tsing Hua University
 2024/09/01, present, NTHU Physics, c=rgb(116,29,128)
