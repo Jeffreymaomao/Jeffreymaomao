@@ -38,7 +38,7 @@ yyyy[/MM[/dd[-hh:mm]]]
 2009/09/01, 2014/06/01, DTES (大同國小), c=rgb(44,103,72)
 
 #### Wu Xiu Taekwondo Gym 武秀跆拳道
-2009/09/01, 2016/06/01, Taekwondo (跆拳道), c=rgb(20,20,20)
+2009/09/01, 2016/06/01, Taekwondo (跆拳道), c=rgb(160,100,10)
 
 -----------------------------------
 
@@ -104,13 +104,13 @@ yyyy[/MM[/dd[-hh:mm]]]
 -----------------------------------
 
 #### Investigating an Analytic Model for Neutrino Light Curves of Core-Collapse Supernovae
-2023/07/01, 2023/08/29, (Sinica) Light Curve Project, c=rgb(60,60,60)
+2023/07/01, 2023/08/29, (Sinica) Light Curve Project, c=rgb(40,170,200)
 
 #### Constraining the equation of state of neutron star matter with LIGO and NICER data
-2023/06/01, 2024/06/01, (CCU) Neutron Star Project, c=rgb(60,60,60)
+2023/06/01, 2024/06/01, (CCU) Neutron Star Project, c=rgb(40,170,200)
 
 #### Parameter Estimation of Coupled Oscillation System through Markov Chain Monte Carlo Method
-2023/02/01, 2024/06/01, (CCU) MCMC Project, c=rgb(60,60,60)
+2023/02/01, 2024/06/01, (CCU) MCMC Project, c=rgb(40,170,200)
 
 #### Ray Tracing in Schwarzschild Black Hole
 2023/02/01, 2024/08/29, Schwarzschild Black Hole Project, c=rgb(170, 10, 20)
@@ -125,14 +125,17 @@ yyyy[/MM[/dd[-hh:mm]]]
 2017/09/01, 2021/06/01, Desmos Collection Projects, c=rgb(170, 10, 20)
 
 #### Note Tree Website Project
-2023/05/21, 2024/01/28, NoteTree Project
+2023/05/21, 2024/01/28, NoteTree Project, c=rgb(170, 10, 20)
 
 -----------------------------------
 #### Ray Tracing in Kerr Black Hole
-2021/06/30, 2021/06/01, Kerr Black Hole Project, c=rgb(170, 10, 20)
+2024/06/01, 2024/06/30, Kerr Black Hole Project, c=rgb(170, 10, 20)
 
 #### Institute of Physics, National Tsing Hua University
 2024/09/01, present, NTHU Physics, c=rgb(116,29,128)
+
+#### CEAG Chiral-CCSN Project
+2024/09/01, present, Chiral-CCSN, c=rgb(40,170,200)
 
 -----------------------------------
 
