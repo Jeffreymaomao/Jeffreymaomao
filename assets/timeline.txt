@@ -1,0 +1,129 @@
+yyyy[/MM[/dd[-hh:mm]]]
+
+-----------------------------------
+
+2002/06/13, Birthday, c=rgb(200,100,100)
+
+-----------------------------------
+
+2003
+
+-----------------------------------
+
+2004
+
+-----------------------------------
+
+2005
+
+-----------------------------------
+
+2006
+
+-----------------------------------
+
+2007
+
+-----------------------------------
+#### Da-Ton Elementary School H.C.C 新竹縣竹東鎮大同國民小學
+2008/09/01, 2014/06/01, DTES (大同國小), c=rgb(44,103,72)
+
+#### Wu Xiu Taekwondo Gym 武秀跆拳道
+2008/09/01, 2016/06/01, Taekwondo (跆拳道), c=rgb(20,20,20)
+
+-----------------------------------
+
+2009
+
+-----------------------------------
+
+2010
+
+-----------------------------------
+
+2011
+
+-----------------------------------
+
+2012
+
+-----------------------------------
+
+2013
+
+-----------------------------------
+
+#### Hsinchu County Tzu-Chiang Junior High School 新竹縣立自強國民中學
+2014/09/01, 2017/06/01, HCTCJHS (自強國中), c=rgb(46,107,203)
+
+-----------------------------------
+
+2015
+
+-----------------------------------
+
+2016
+
+-----------------------------------
+#### National Chupei Senior High School 國立竹北高中
+2017/09/01, 2020/06/01, CPSH (竹北高中), c=rgb(50,150,10)
+
+-----------------------------------
+
+2018
+
+-----------------------------------
+
+2019
+
+-----------------------------------
+#### Department of Applied Physics, National University of Kaohsiung 
+2020/09/01, 2021/06/01, NUK Physics, c=rgb(240,170,20)
+
+-----------------------------------
+
+#### Department of Physics, National Chung Cheng University
+2021/09/01, 2024/06/01, CCU Physics, c=rgb(43,73,134)
+
+-----------------------------------
+
+#### Teaching Assistant of General Physics
+2022/09/01, 2023/06/01, TA of General Physics, c=rgb(150,150,150)
+
+#### Teaching Assistant of Numerical Analysis
+2022/09/01, 2023/06/01, TA of Numerical Analysis, c=rgb(150,150,150)
+
+-----------------------------------
+
+#### Investigating an Analytic Model for Neutrino Light Curves of Core-Collapse Supernovae
+2023/07/01, 2023/08/29, (Sinica) Light Curve Project, c=rgb(60,60,60)
+
+#### Constraining the equation of state of neutron star matter with LIGO and NICER data
+2023/06/01, 2024/06/29, (CCU) Neutron Star Project, c=rgb(60,60,60)
+
+#### Parameter Estimation of Coupled Oscillation System through Markov Chain Monte Carlo Method
+2023/08/01, 2024/05/29, (CCU) MCMC Project, c=rgb(60,60,60)
+
+#### Ray Tracing in Schwarzschild Black Hole
+2023/07/01, 2024/08/29, Schwarzschild BH Project, c=rgb(170, 10, 20)
+
+#### Gravitational Lensing Visualization of Schwarzschild Black Hole
+2023/07/01, 2023/08/29, GR Lensing Project, c=rgb(170, 10, 20)
+
+#### Simulation of the Orbit near Compact star
+2023/07/01, 2023/08/29, GR Precession Project, c=rgb(170, 10, 20)
+
+#### Desmos Projects Collection Website
+2017/09/01, 2021/06/29, Desmos Collection Projects, c=rgb(170, 10, 20)
+
+
+-----------------------------------
+
+#### Institute of Physics, National Tsing Hua University
+2024/09/01, present, NTHU Physics, c=rgb(116,29,128)
+
+-----------------------------------
+
+2025
+
+-----------------------------------
