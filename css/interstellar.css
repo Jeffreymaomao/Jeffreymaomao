@@ -361,6 +361,10 @@ main, section, div.content, ul, li, a.card, h4 {
 /* notransform */
 }
 
+iframe {
+	border-radius: 20px;
+}
+
 .iframe-container {
 	display: block;
 	opacity: 0;
